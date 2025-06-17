@@ -12,9 +12,9 @@
 ```
 Testing results:
 
-1) Incorrect amount of remaining funds
-2) "Active" button in lowercase
-3) Wrong size title "To do list" in responsive design
+1) Incorrect amount of remaining funds.
+2) "Active" button in lowercase.
+3) Wrong size title "To do list" in responsive design.
 4) To uncheck a task, double click the top check mark.
 5) favicon file is missing or wrong path.
 
