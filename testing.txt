@@ -10,6 +10,7 @@
 
 
 ```
+Testing results:
 
 1) Incorrect amount of remaining funds
 2) "Active" button in lowercase
