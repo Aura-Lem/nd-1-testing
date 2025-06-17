@@ -13,9 +13,14 @@
 Testing results:
 
 1) Incorrect amount of remaining funds.
-2) "Active" button in lowercase.
-3) Wrong size title "To do list" in responsive design.
-4) To uncheck a task, double click the top check mark.
-5) favicon file is missing or wrong path.
+2) "Active" button must start with capital letter.
+3) Overlap "To do list" in responsive design.
+4) Toggle functionality top chek mark(To uncheck a task, double click the top check mark).
+5) Button don't shows down menu as box
+6) Errors in the console: Failed to load resource: the server responded with a status of 404
+7) Missing information about deleted task.
+8) Favicon file is missing or wrong path.
+9) Grammatical error in comment about double-cklick.
+10) When adding a task, 3 spaces are placed in the input window. The placeholder text is not visible.
 
 ```
