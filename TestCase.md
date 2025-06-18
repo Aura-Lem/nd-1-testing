@@ -1,18 +1,15 @@
 TS 1. Create ToDo
 TS 2. Edit ToDo
 TS 3. Delete Todo
-TS 4. Mark as completed ToDo
-TS 5. Mark as completed all ToDo
-TS 6. Unmark all ToDo
-TS 7. Check active ToDo
-TS 8. Check completed ToDo
-TS 9. Clear all completed ToDo
-TS 10. Check responsive design
+TS 4. Changing the status of a task
+TS 5. ToDo filter
+TS 6. Matching UI elements
+
 
 TC 1.1. Positive create ToDo
 Steps:
 1. Open app page: https://todolist.james.am/
-2. Input todo name: darbu sarasas
+2. Input todo name: [darbu sarasas, 265568456, !&%$$^&&&%$, DARBU SARASAS, Lorem50]
 3. Press key [Enter]
 4. Observe result
 
@@ -22,65 +19,14 @@ Actual result:
 Status: PASS
 
 Comments:
-TC 1.2. Positive create ToDo with numbers
+
+TC 1.2. Negative create ToDo with spaces
 Steps:
-1. Create ToDo with numbers
-2. Press key [Enter]
-3. Observe result
-
-Expected result: Creates a task with numbers.
-Actual result:
-
-Status: PASS
-
-Comments:
-
-TC 1.3. Positive create ToDo with special characters
-Steps:
-1. Create ToDo with special characters
-2. Press key [Enter]
-3. Observe result
-
-Expected result: Creates a task with special characters.
-Actual result:
-
-Status: PASS
-
-Comments:
-
-TC 1.4. Positive create ToDo with spaces at the beginning
-Steps:
-1. Create ToDo with spaces at the beginning
+1. Input todo with spaces: [___darbu sarasas, darbu sarasas___, ___darbu sarasas___]
 2. Press key [Enter]
 3. Observe result
 
 Expected result: Creates a task without spaces.
-Actual result:
-
-Status: PASS
-
-Comments:
-
-TC 1.5. Positive create ToDo with capital letters
-Steps:
-1. Create ToDo with capital letters
-2. Press key [Enter]
-3. Observe result
-
-Expected result: Creates a task with capital letters.
-Actual result:
-
-Status: PASS
-
-Comments:
-
-TC 1.6. Positive create ToDo with long text
-Steps:
-1. Create ToDo with 50 words in text
-2. Press key [Enter]
-3. Observe result
-
-Expected result: Creates a task with 50 words in text.
 Actual result:
 
 Status: PASS
@@ -115,7 +61,7 @@ Comments:
 
 TC 4.1. Positive Mark as completed ToDo
 Steps:
-1. Click the box next to the task
+1. Click check box
 2. Observe result
 
 Expected result: Put a check mark in the box and crossed out the task.
@@ -125,7 +71,7 @@ Status: PASS
 
 Comments:
 
-TC 5.1. Positive Mark as completed all ToDo
+TC 4.2. Positive Mark as completed all ToDo
 Steps:
 1. Press the button to select all tasks
 2. Observe result
@@ -137,7 +83,7 @@ Status: PASS
 
 Comments:
 
-TC 6.1. Positive Unmark all ToDo
+TC 4.3. Positive Mark all active ToDo
 Steps:
 1. Press the button to uncheckt all tasks
 2. Observe result
@@ -149,49 +95,37 @@ Status: FAIL
 
 Comments:
 
-TC 7.1. Positive Check active ToDo
+TC 5.1. Positive Visual filter
 Steps:
-1. Press button active
+1. Press button: [Completed, Active, Clear All]
 2. Observe result
 
-Expected result: Must show active tasks.
+Expected result: Must show [Completed tasks, Active tasks, Clear all completed tasks].
 Actual result: 
 
 Status: PASS
 
 Comments:
 
-TC 8.1. Positive Check completed ToDo
-Steps:
-1. Press button completed
-2. Observe result
-
-Expected result: Must show completed tasks.
-Actual result:
-
-Status: PASS
-
-Comments:
-
-TC 9.1. Positive Clear all completed ToDo
-Steps:
-1. Press button Clear all
-2. Observe result
-
-Expected result: Must clear all completed tasks.
-Actual result:
-
-Status: PASS
-
-Comments:
-
-TC 10.1. Positive Check responsive design
+TC 6.1. Positive Check responsive design
 Steps:
 1. Test the mobile version and on different screen widths
 2. Observe result
 
 Expected result: All app elements adapt to the screen size.
 Actual result: From 444px the title overlaps.
+
+Status: FAIL
+
+Comments:
+
+TC 6.2. Positive All text
+Steps:
+1. Check that all texts are grammatically correct
+2. Observe result
+
+Expected result: All texts are written grammatically correct.
+Actual result: Button "Active" name starts with a lowercase letter. The note about editing tasks is misspelled.
 
 Status: FAIL
 
